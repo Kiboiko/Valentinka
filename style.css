@@ -11,8 +11,8 @@ body {
 
 /* Position the "No" button absolutely within body */
 #noButton {
-    position: absolute;
-    margin-left: 150px;
+    /* position: absolute;
+    margin-left: 150px; */
     transition: 0.5s;
     /* Smooth movement */
 }
@@ -31,7 +31,10 @@ body {
     margin-right: 150px;
     /* Smooth movement */
 }
-
+#microgirlPNG{
+    max-width: 272px;
+    max-height: 241px;
+}
 .header_text {
     font-family: cursive;
     font-size: 50px;
@@ -43,15 +46,14 @@ body {
 }
 
 .buttons {
-    width: 900px;
     display: flex;
-    gap: 200px;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center; /* Кнопки будут по центру */
     align-items: center;
+    width: 100%;
+    max-width: 900px; 
+    gap: 50px; /* ТЕПЕРЬ ЭТОТ ОТСТУП БУДЕТ РАБОТАТЬ */
     margin-top: 20px;
-    margin-left: 20px;
-    /* optional: adds some space between the buttons */
 }
 
 .btn {
@@ -88,6 +90,6 @@ img {
 }
 
 #yesButton {
-    position: absolute;
-    right: 850px;
+    /* position: absolute;
+    right: 850px; */
 }
